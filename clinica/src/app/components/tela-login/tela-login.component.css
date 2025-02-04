@@ -1,0 +1,42 @@
+.divMain{
+    display: flex;
+    flex-direction: column;
+    width: 50%;
+    margin: 15% auto;
+    padding: 20px;
+    border-radius: 50px;
+    align-items: center;
+    justify-content: center;
+    background-color: aquamarine;
+}
+.divForm{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+    background-color: red;
+    font-size: small;
+    padding: 10px;
+}
+.divForm>a{
+    margin-left: auto;
+}
+input{
+    width: 100%;
+    margin-top: 15px;
+    padding: 12px;
+    border-radius: 35px;
+    text-align: center;
+}
+.btnLogin{
+    display: block;
+    width: 100%;
+    padding: 10px;
+    border-radius: 35px;
+    background-color: palevioletred;
+    color: white;
+    text-align: center;
+    font-weight: bold;
+    cursor: pointer;
+    margin-top: 15px;
+}
