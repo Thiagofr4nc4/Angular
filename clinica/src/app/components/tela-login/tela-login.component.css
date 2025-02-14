@@ -1,4 +1,3 @@
-
 .divMain {
     display: flex;
     flex-direction: column;
@@ -23,7 +22,8 @@
 .divForm label {
     display: flex;
     align-items: center;
-    gap: 5px; /* Mantém o checkbox próximo ao texto */
+    gap: 5px;
+    /* Mantém o checkbox próximo ao texto */
 }
 
 .divForm a {
@@ -31,6 +31,7 @@
     color: blue;
     transition: color 5s;
 }
+
 .divForm>input {
     text-align: center;
 }
@@ -60,4 +61,69 @@ input {
 
 .btnLogin:hover {
     background-color: rgb(199, 83, 123);
+}
+
+.btnCadastro {
+    display: block;
+    width: 50%;
+    padding: 10px;
+    border-radius: 35px;
+    border: 1px solid palevioletred;
+    background-color: palevioletred;
+    color: white;
+    text-align: center;
+    font-weight: bold;
+    cursor: pointer;
+    margin-top: 15px;
+}
+
+.btnCadastro:hover {
+    background-color: rgb(199, 83, 123);
+}
+
+.modal {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.863);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+}
+
+.modalContent {
+    border: 1px solid #ccc;
+    border-radius: 35px;
+    text-align: center;
+
+   
+}
+
+.formContent>input {
+    width: 35%;
+    border-radius: 35px;
+    text-align: center;
+    margin: 5px;
+}
+
+.modalContent>h2 {
+    color: white;
+}
+.btnCadastroForm{
+    display: block;
+    width: 50%;
+    padding: 10px;
+    border-radius: 35px;
+    border: 1px solid palevioletred;
+    background-color: palevioletred;
+    color: white;
+    text-align: center;
+    font-weight: bold;
+    cursor: pointer;
+    margin-top: 15px;
+    margin-left: 25%;
+    margin-bottom: 10px;
 }

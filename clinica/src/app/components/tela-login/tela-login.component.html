@@ -15,5 +15,18 @@
             </div>
             <button class="btnLogin" type="submit">Entrar</button>
         </form>
+        <button class="btnCadastro" (click)="mostrarModal()">Cadastre-se</button>
+    </div>
+    <!-- Modal Visivel somente ao clicar no botão de cadastro-->
+    <div class="modal" *ngIf="modalAtivo">
+        <div class="modalContent">
+            <h2>Cadastro de usuário</h2>
+            <form class="formContent">
+                <input type="text" placeholder="Nome">
+                <input type="email" placeholder="Email">
+                <input type="password" placeholder="Senha">
+                <button class="btnCadastroForm" (click)="mostrarModal()" type="button">Cadastrar</button>
+            </form>
+        </div>
     </div>
 </section>
