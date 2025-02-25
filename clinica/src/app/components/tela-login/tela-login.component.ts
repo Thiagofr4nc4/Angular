@@ -1,5 +1,6 @@
 import { Component } from '@angular/core';
 import { CommonModule } from '@angular/common';
+import { Router } from '@angular/router';
 
 @Component({
   selector: 'app-tela-login',
@@ -10,8 +11,13 @@ import { CommonModule } from '@angular/common';
 })
 export class TelaLoginComponent {
   modalAtivo = false;
+  constructor(private router: Router) {}
 
   mostrarModal() {
     this.modalAtivo = !this.modalAtivo;
+  }
+
+  irTelaPrincipal(){
+    this.router.navigate(['/tela-principal']);
   }
 }

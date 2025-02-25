@@ -1,10 +1,11 @@
 import { Component } from '@angular/core';
+import { FooterComponent } from "./components/footer/footer.component";
 import { RouterOutlet } from '@angular/router';
-import { TelaLoginComponent } from "./components/tela-login/tela-login.component";
 
 @Component({
   selector: 'app-root',
-  imports: [RouterOutlet, TelaLoginComponent],
+  standalone: true,
+  imports: [FooterComponent, RouterOutlet],
   templateUrl: './app.component.html',
   styleUrl: './app.component.css'
 })

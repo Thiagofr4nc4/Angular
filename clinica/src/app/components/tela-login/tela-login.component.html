@@ -1,11 +1,12 @@
 <header>
     <h1>Chansey+</h1>
 </header>
+
 <section>
     <div class="divMain">
         <form action="" method="post">
-            <input type="text" name="usuarioLogin" id="usuarioLogin" placeholder="Digite seu usuario" > <br>
-            <input type="password" name="senhaLogin" id="senhaLogin" placeholder="* * * * * * * *" > <br>
+            <input type="text" name="usuarioLogin" id="usuarioLogin" placeholder="Digite seu usuario"> <br>
+            <input type="password" name="senhaLogin" id="senhaLogin" placeholder="* * * * * * * *"> <br>
             <div class="divForm">
                 <label for="lembrarUsuario">
                     <input type="checkbox" name="lembrarUsuario" id="lembrarUsuario">
@@ -13,11 +14,10 @@
                 </label>
                 <p><a href="#">Esqueceu sua senha ?</a></p>
             </div>
-            <button class="btnLogin" (click)="entrar()" type="submit">Entrar</button>
+            <button class="btnLogin" (click)="irTelaPrincipal()" type="submit">Entrar</button>
         </form>
         <button class="btnCadastro" (click)="mostrarModal()">Cadastre-se</button>
     </div>
-    <!-- Modal Visivel somente ao clicar no botão de cadastro-->
     <div class="modal" *ngIf="modalAtivo">
         <div class="modalContent">
             <div class="divFechar">
