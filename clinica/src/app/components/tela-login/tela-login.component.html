@@ -4,8 +4,8 @@
 <section>
     <div class="divMain">
         <form action="" method="post">
-            <input type="email" name="emailLogin" id="emailLogin" placeholder="Digite seu email" required> <br>
-            <input type="password" name="senhaLogin" id="senhaLogin" placeholder="* * * * * * * *" required> <br>
+            <input type="text" name="usuarioLogin" id="usuarioLogin" placeholder="Digite seu usuario" > <br>
+            <input type="password" name="senhaLogin" id="senhaLogin" placeholder="* * * * * * * *" > <br>
             <div class="divForm">
                 <label for="lembrarUsuario">
                     <input type="checkbox" name="lembrarUsuario" id="lembrarUsuario">
@@ -13,19 +13,22 @@
                 </label>
                 <p><a href="#">Esqueceu sua senha ?</a></p>
             </div>
-            <button class="btnLogin" type="submit">Entrar</button>
+            <button class="btnLogin" (click)="entrar()" type="submit">Entrar</button>
         </form>
         <button class="btnCadastro" (click)="mostrarModal()">Cadastre-se</button>
     </div>
     <!-- Modal Visivel somente ao clicar no botão de cadastro-->
     <div class="modal" *ngIf="modalAtivo">
         <div class="modalContent">
-            <h2>Cadastro de usuário</h2>
+            <div class="divFechar">
+                <h2>Cadastro de usuário</h2>
+                <button (click)="mostrarModal()" type="button">X</button>
+            </div>
             <form class="formContent">
-                <input type="text" placeholder="Nome">
-                <input type="email" placeholder="Email">
-                <input type="password" placeholder="Senha">
-                <button class="btnCadastroForm" (click)="mostrarModal()" type="button">Cadastrar</button>
+                <input type="text" name="nomeCadastro" placeholder="Nome" required>
+                <input type="email" name="emailCadastro" placeholder="Email" required>
+                <input type="password" name="senhaCadastro" placeholder="Senha" required>
+                <button class="btnCadastroForm" type="submit">Cadastrar</button>
             </form>
         </div>
     </div>
