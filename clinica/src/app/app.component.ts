@@ -4,11 +4,12 @@ import { Router, NavigationEnd, ActivatedRoute } from '@angular/router';
 import { RouterOutlet } from '@angular/router';
 import { NavbarComponent } from './components/navbar/navbar.component';
 import { CommonModule } from '@angular/common';
+import { BaseUiComponent } from "./components/base-ui/base-ui.component";
 
 @Component({
   selector: 'app-root',
   standalone: true,
-  imports: [FooterComponent, RouterOutlet, NavbarComponent, CommonModule],
+  imports: [FooterComponent, RouterOutlet, NavbarComponent, CommonModule, BaseUiComponent],
   templateUrl: './app.component.html',
   styleUrls: ['./app.component.css']
 })
