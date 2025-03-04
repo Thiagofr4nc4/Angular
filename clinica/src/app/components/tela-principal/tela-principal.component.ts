@@ -8,4 +8,8 @@ import { Component } from '@angular/core';
 })
 export class TelaPrincipalComponent {
 
+  cadastrarPokemon() {
+    console.log('Cadastrar Pokemon');
+  }
+
 }
